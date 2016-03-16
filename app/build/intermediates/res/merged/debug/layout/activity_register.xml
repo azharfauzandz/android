@@ -54,10 +54,24 @@
             android:textColor="@color/input_register"
             android:textColorHint="@color/input_register_hint" />
 
+
+        <EditText
+            android:id="@+id/job"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/input_register_bg"
+            android:hint="@string/hint_job"
+            android:inputType="textCapWords"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/input_register"
+            android:textColorHint="@color/input_register_hint" />
+
         <!-- Login Button -->
 
         <Button
-            android:id="@+id/btn1Register"
+            android:id="@+id/btnRegister"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dip"

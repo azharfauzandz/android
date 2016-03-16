@@ -41,6 +41,7 @@
             android:textColor="@color/input_register"
             android:textColorHint="@color/input_register_hint" />
 
+
         <EditText
             android:id="@+id/password"
             android:layout_width="fill_parent"
@@ -54,18 +55,34 @@
             android:textColor="@color/input_register"
             android:textColorHint="@color/input_register_hint" />
 
-        <EditText
-            android:id="@+id/email"
+        <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:background="@color/input_register_bg"
-            android:hint="@string/hint_email"
-            android:inputType="textEmailAddress"
-            android:padding="10dp"
-            android:singleLine="true"
-            android:textColor="@color/input_register"
-            android:textColorHint="@color/input_register_hint" />
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/birthdate"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@color/input_register_bg"
+                android:hint="@string/hint_birthdate"
+                android:layout_gravity="left"
+                android:padding="10dp"
+                android:textColor="@color/input_register"
+                android:textColorHint="@color/input_register_hint" />
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignBottom="@+id/editText"
+            android:layout_toRightOf="@+id/editText"
+            android:layout_gravity="right"
+            android:contentDescription="@string/selectdate"
+            android:cropToPadding="true"
+            android:src="@drawable/calendar_icon"/>
+
+        </LinearLayout>
 
         <EditText
             android:id="@+id/job"
@@ -74,7 +91,7 @@
             android:layout_marginBottom="10dp"
             android:background="@color/input_register_bg"
             android:hint="@string/hint_job"
-            android:inputType="textJob"
+            android:inputType="textCapWords"
             android:padding="10dp"
             android:singleLine="true"
             android:textColor="@color/input_register"
