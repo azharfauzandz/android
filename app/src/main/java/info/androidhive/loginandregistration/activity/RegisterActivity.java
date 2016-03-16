@@ -6,6 +6,8 @@
 package info.androidhive.loginandregistration.activity;
 
 import android.app.Activity;
+import android.app.DatePickerDialog;
+import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,6 +16,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.android.volley.Request.Method;
@@ -24,6 +27,7 @@ import com.android.volley.toolbox.StringRequest;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -47,7 +51,14 @@ public class RegisterActivity extends Activity {
     private EditText inputCity;
     private EditText inputJob;
     private EditText inputProvince;
+    private EditText inputDate;
     private DatePicker datePicker;
+    private ImageButton ib;
+    private Calendar cal;
+    private int day;
+    private int month;
+    private int year;
+    private int datePickerListener;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -62,6 +73,28 @@ public class RegisterActivity extends Activity {
         inputJob = (EditText) findViewById(R.id.text);
         btnRegister = (Button) findViewById(R.id.btnRegister);
         btnLinkToLogin = (Button) findViewById(R.id.btnLinkToLoginScreen);
+
+        //input calendar
+        ib = (ImageButton) findViewById(R.id.imageButton1);
+        cal = Calendar.getInstance();
+        day = cal.get(Calendar.DAY_OF_MONTH);
+        month = cal.get(Calendar.MONTH);
+        year = cal.get(Calendar.YEAR);
+        inputDate = (EditText) findViewById(R.id.editText);
+
+
+        //Button Calendar Image
+       /* ib.setOnClickListener(new View.OnClickListener()){
+            public void onClick(View v){
+                showDialog();
+            }
+        };*/
+
+   /*     @Override
+        @Deprecated
+        protected Dialog onCreateDialog(int id) {
+            return new DatePickerDialog(this, datePickerListener, year, month, day);
+        }*/
 
         // Progress dialog
         pDialog = new ProgressDialog(this);
@@ -91,8 +124,8 @@ public class RegisterActivity extends Activity {
                 String city = inputCity.getText().toString().trim();
                 String job = inputJob.getText().toString().trim();
 
-                if (!name.isEmpty() && !email.isEmpty() && !password.isEmpty() && !city.isEmpty() && !job.isEmpty()) {
-                    registerUser(name, email, password, );
+                if (!name.isEmpty() && !email.isEmpty() && !password.isEmpty()) {
+                    registerUser(name, email, password );
                 } else {
                     Toast.makeText(getApplicationContext(),
                             "Please enter your details!", Toast.LENGTH_LONG)
