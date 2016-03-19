@@ -13,10 +13,10 @@
     <string name="btn_logout">LOGOUT</string>
     <string name="name">Fullname</string>
 
+    <string name="hint_job">Job</string>
     <string name="hint_city">City</string>
-    <string name="hint_job">Job1</string>
+    <string name="hint_province">Province</string>
 
-    <string name="hint_phone">Phone</string>
     <string name="hint_birthdate">Birthdate</string>
     <string name="selectdate">Select Date</string>
 

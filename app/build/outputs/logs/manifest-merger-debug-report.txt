@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Azhar Fauzan Dz\Google Drive\Surverior\AndroidLoginAndRegistration v2\AndroidLoginAndRegistration\app\src\main\AndroidManifest.xml:2:1-42:12
+ADDED from C:\Users\Azhar Fauzan Dz\Google Drive\Surverior\AndroidLoginAndRegistration v2\AndroidLoginAndRegistration\app\src\main\AndroidManifest.xml:2:1-47:12
 	package
 		ADDED from C:\Users\Azhar Fauzan Dz\Google Drive\Surverior\AndroidLoginAndRegistration v2\AndroidLoginAndRegistration\app\src\main\AndroidManifest.xml:3:5-52
 		INJECTED from C:\Users\Azhar Fauzan Dz\Google Drive\Surverior\AndroidLoginAndRegistration v2\AndroidLoginAndRegistration\app\src\main\AndroidManifest.xml
@@ -24,6 +24,9 @@ MERGED from [com.android.support:recyclerview-v7:23.1.1] C:\Users\Azhar Fauzan D
 MERGED from [com.android.support:support-v4:23.1.1] C:\Users\Azhar Fauzan Dz\Google Drive\Surverior\AndroidLoginAndRegistration v2\AndroidLoginAndRegistration\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:support-v4:23.1.1] C:\Users\Azhar Fauzan Dz\Google Drive\Surverior\AndroidLoginAndRegistration v2\AndroidLoginAndRegistration\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
 MERGED from [com.mcxiaoke.volley:library-aar:1.0.0] C:\Users\Azhar Fauzan Dz\Google Drive\Surverior\AndroidLoginAndRegistration v2\AndroidLoginAndRegistration\app\build\intermediates\exploded-aar\com.mcxiaoke.volley\library-aar\1.0.0\AndroidManifest.xml:3:5-72
+MERGED from [com.google.android.gms:play-services-appindexing:8.1.0] C:\Users\Azhar Fauzan Dz\Google Drive\Surverior\AndroidLoginAndRegistration v2\AndroidLoginAndRegistration\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.1.0\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] C:\Users\Azhar Fauzan Dz\Google Drive\Surverior\AndroidLoginAndRegistration v2\AndroidLoginAndRegistration\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.1.1] C:\Users\Azhar Fauzan Dz\Google Drive\Surverior\AndroidLoginAndRegistration v2\AndroidLoginAndRegistration\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
 	android:targetSdkVersion
 		ADDED from C:\Users\Azhar Fauzan Dz\Google Drive\Surverior\AndroidLoginAndRegistration v2\AndroidLoginAndRegistration\app\src\main\AndroidManifest.xml:9:9-38
 		INJECTED from C:\Users\Azhar Fauzan Dz\Google Drive\Surverior\AndroidLoginAndRegistration v2\AndroidLoginAndRegistration\app\src\main\AndroidManifest.xml
@@ -37,7 +40,7 @@ ADDED from C:\Users\Azhar Fauzan Dz\Google Drive\Surverior\AndroidLoginAndRegist
 	android:name
 		ADDED from C:\Users\Azhar Fauzan Dz\Google Drive\Surverior\AndroidLoginAndRegistration v2\AndroidLoginAndRegistration\app\src\main\AndroidManifest.xml:11:22-64
 application
-ADDED from C:\Users\Azhar Fauzan Dz\Google Drive\Surverior\AndroidLoginAndRegistration v2\AndroidLoginAndRegistration\app\src\main\AndroidManifest.xml:13:5-40:19
+ADDED from C:\Users\Azhar Fauzan Dz\Google Drive\Surverior\AndroidLoginAndRegistration v2\AndroidLoginAndRegistration\app\src\main\AndroidManifest.xml:13:5-45:19
 MERGED from [com.android.support:appcompat-v7:23.1.1] C:\Users\Azhar Fauzan Dz\Google Drive\Surverior\AndroidLoginAndRegistration v2\AndroidLoginAndRegistration\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:23.1.1] C:\Users\Azhar Fauzan Dz\Google Drive\Surverior\AndroidLoginAndRegistration v2\AndroidLoginAndRegistration\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:23.1.1] C:\Users\Azhar Fauzan Dz\Google Drive\Surverior\AndroidLoginAndRegistration v2\AndroidLoginAndRegistration\app\build\intermediates\exploded-aar\com.android.support\design\23.1.1\AndroidManifest.xml:22:5-20
@@ -46,6 +49,9 @@ MERGED from [com.android.support:support-v4:23.1.1] C:\Users\Azhar Fauzan Dz\Goo
 MERGED from [com.android.support:support-v4:23.1.1] C:\Users\Azhar Fauzan Dz\Google Drive\Surverior\AndroidLoginAndRegistration v2\AndroidLoginAndRegistration\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:23.1.1] C:\Users\Azhar Fauzan Dz\Google Drive\Surverior\AndroidLoginAndRegistration v2\AndroidLoginAndRegistration\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
 MERGED from [com.mcxiaoke.volley:library-aar:1.0.0] C:\Users\Azhar Fauzan Dz\Google Drive\Surverior\AndroidLoginAndRegistration v2\AndroidLoginAndRegistration\app\build\intermediates\exploded-aar\com.mcxiaoke.volley\library-aar\1.0.0\AndroidManifest.xml:5:5-19
+MERGED from [com.google.android.gms:play-services-appindexing:8.1.0] C:\Users\Azhar Fauzan Dz\Google Drive\Surverior\AndroidLoginAndRegistration v2\AndroidLoginAndRegistration\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.1.0\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] C:\Users\Azhar Fauzan Dz\Google Drive\Surverior\AndroidLoginAndRegistration v2\AndroidLoginAndRegistration\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.1.1] C:\Users\Azhar Fauzan Dz\Google Drive\Surverior\AndroidLoginAndRegistration v2\AndroidLoginAndRegistration\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
 	android:label
 		ADDED from C:\Users\Azhar Fauzan Dz\Google Drive\Surverior\AndroidLoginAndRegistration v2\AndroidLoginAndRegistration\app\src\main\AndroidManifest.xml:18:9-41
 	android:debuggable
@@ -96,3 +102,10 @@ ADDED from C:\Users\Azhar Fauzan Dz\Google Drive\Surverior\AndroidLoginAndRegist
 		ADDED from C:\Users\Azhar Fauzan Dz\Google Drive\Surverior\AndroidLoginAndRegistration v2\AndroidLoginAndRegistration\app\src\main\AndroidManifest.xml:39:13-43
 	android:name
 		ADDED from C:\Users\Azhar Fauzan Dz\Google Drive\Surverior\AndroidLoginAndRegistration v2\AndroidLoginAndRegistration\app\src\main\AndroidManifest.xml:37:13-50
+meta-data#com.google.android.gms.version
+ADDED from C:\Users\Azhar Fauzan Dz\Google Drive\Surverior\AndroidLoginAndRegistration v2\AndroidLoginAndRegistration\app\src\main\AndroidManifest.xml:42:9-44:69
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] C:\Users\Azhar Fauzan Dz\Google Drive\Surverior\AndroidLoginAndRegistration v2\AndroidLoginAndRegistration\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from C:\Users\Azhar Fauzan Dz\Google Drive\Surverior\AndroidLoginAndRegistration v2\AndroidLoginAndRegistration\app\src\main\AndroidManifest.xml:44:13-66
+	android:name
+		ADDED from C:\Users\Azhar Fauzan Dz\Google Drive\Surverior\AndroidLoginAndRegistration v2\AndroidLoginAndRegistration\app\src\main\AndroidManifest.xml:43:13-58

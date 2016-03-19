@@ -10,6 +10,7 @@ import android.app.DatePickerDialog;
 import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -17,12 +18,17 @@ import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import com.android.volley.Request.Method;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
+import com.google.android.gms.appindexing.Action;
+import com.google.android.gms.appindexing.AppIndex;
+import com.google.android.gms.common.api.GoogleApiClient;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -59,6 +65,10 @@ public class RegisterActivity extends Activity {
     private int month;
     private int year;
     private int datePickerListener;
+    private RadioGroup radioGroup;
+    private char gender;
+
+    static final int DATE_ID = 999;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -68,9 +78,9 @@ public class RegisterActivity extends Activity {
         inputFullName = (EditText) findViewById(R.id.name);
         inputEmail = (EditText) findViewById(R.id.email);
         inputPassword = (EditText) findViewById(R.id.password);
+        inputJob = (EditText) findViewById(R.id.job);
         inputCity = (EditText) findViewById(R.id.text);
         inputProvince = (EditText) findViewById(R.id.text);
-        inputJob = (EditText) findViewById(R.id.text);
         btnRegister = (Button) findViewById(R.id.btnRegister);
         btnLinkToLogin = (Button) findViewById(R.id.btnLinkToLoginScreen);
 
@@ -80,21 +90,38 @@ public class RegisterActivity extends Activity {
         day = cal.get(Calendar.DAY_OF_MONTH);
         month = cal.get(Calendar.MONTH);
         year = cal.get(Calendar.YEAR);
-        inputDate = (EditText) findViewById(R.id.editText);
+        inputDate = (EditText) findViewById(R.id.birthdate);
 
+        radioGroup = (RadioGroup) findViewById(R.id.radioGroup);
+        radioGroup.clearCheck();
 
-        //Button Calendar Image
-       /* ib.setOnClickListener(new View.OnClickListener()){
-            public void onClick(View v){
-                showDialog();
+        // set text date input default
+        inputDate.setText(new StringBuilder().append("Birthday"));
+
+        //calendar image listener
+        ib.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showDialog(DATE_ID);
             }
-        };*/
+        });
 
-   /*     @Override
-        @Deprecated
-        protected Dialog onCreateDialog(int id) {
-            return new DatePickerDialog(this, datePickerListener, year, month, day);
-        }*/
+        //gender radio button listener
+        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                RadioButton rb = (RadioButton) group.findViewById(checkedId);
+                if(null!=rb && checkedId > -1){
+                    Toast.makeText(RegisterActivity.this, rb.getText(), Toast.LENGTH_SHORT).show();
+                    if(rb.getText().equals("Male")){
+                        gender = 'm';
+                    }else{
+                        gender = 'f';
+                    }
+
+                }
+            }
+        });
 
         // Progress dialog
         pDialog = new ProgressDialog(this);
@@ -125,7 +152,7 @@ public class RegisterActivity extends Activity {
                 String job = inputJob.getText().toString().trim();
 
                 if (!name.isEmpty() && !email.isEmpty() && !password.isEmpty()) {
-                    registerUser(name, email, password );
+                    registerUser(name, email, password);
                 } else {
                     Toast.makeText(getApplicationContext(),
                             "Please enter your details!", Toast.LENGTH_LONG)
@@ -242,4 +269,36 @@ public class RegisterActivity extends Activity {
         if (pDialog.isShowing())
             pDialog.dismiss();
     }
+
+    @Override
+    protected Dialog onCreateDialog(int id) {
+        switch (id) {
+            case DATE_ID:
+
+                // open datepicker dialog.
+                // set date picker for current date
+                // add pickerListener listner to date picker
+                return new DatePickerDialog(this, pickerListener, year, month, day);
+        }
+        return null;
+    }
+
+    private DatePickerDialog.OnDateSetListener pickerListener = new DatePickerDialog.OnDateSetListener() {
+
+        // when dialog box is closed, below method will be called.
+        @Override
+        public void onDateSet(DatePicker view, int selectedYear,
+                              int selectedMonth, int selectedDay) {
+
+            year = selectedYear;
+            month = selectedMonth;
+            day = selectedDay;
+
+            // Show selected date
+            inputDate.setText(new StringBuilder().append(month + 1)
+                    .append("-").append(day).append("-").append(year)
+                    .append(" "));
+
+        }
+    };
 }
