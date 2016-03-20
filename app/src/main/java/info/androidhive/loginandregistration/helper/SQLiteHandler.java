@@ -72,21 +72,21 @@ public class SQLiteHandler extends SQLiteOpenHelper {
 	/**
 	 * Storing user details in database
 	 * */
-	public void addUser(String name, String email, String uid,
+	public void addUser(String name, String email, String uid/*,
 						String gender,String birth_date,String profession,
-						String city, String province,  String created_at) {
+						String city, String province,  String created_at*/) {
 		SQLiteDatabase db = this.getWritableDatabase();
 
 		ContentValues values = new ContentValues();
 		values.put(KEY_NAME, name); // Name
 		values.put(KEY_EMAIL, email); // Email
-		values.put(KEY_UID, uid); // Email
-		values.put(KEY_GENDER, gender); // Gender
+		values.put(KEY_UID, uid); // Email/*
+		/*values.put(KEY_GENDER, gender); // Gender
 		values.put(KEY_BIRTH_DATE, birth_date); // Birth_date
 		values.put(KEY_PROFESSION, profession); // Profession
 		values.put(KEY_CITY, city); // City
 		values.put(KEY_PROVINCE, province); // Province
-		values.put(KEY_CREATED_AT, created_at); // Created At
+		values.put(KEY_CREATED_AT, created_at); // Created At*/
 
 		// Inserting Row
 		long id = db.insert(TABLE_USER, null, values);
@@ -110,12 +110,7 @@ public class SQLiteHandler extends SQLiteOpenHelper {
 			user.put("name", cursor.getString(1));
 			user.put("email", cursor.getString(2));
 			user.put("uid", cursor.getString(3));
-			user.put("gender", cursor.getString(4));
-			user.put("birth_date", cursor.getString(5));
-			user.put("profession", cursor.getString(6));
-			user.put("city", cursor.getString(7));
-			user.put("province", cursor.getString(8));
-			user.put("created_at", cursor.getString(9));
+			user.put("created_at", cursor.getString(4));
 		}
 		cursor.close();
 		db.close();
