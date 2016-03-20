@@ -26,9 +26,6 @@ import com.android.volley.Request.Method;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
-import com.google.android.gms.appindexing.Action;
-import com.google.android.gms.appindexing.AppIndex;
-import com.google.android.gms.common.api.GoogleApiClient;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -58,15 +55,13 @@ public class RegisterActivity extends Activity {
     private EditText inputJob;
     private EditText inputProvince;
     private EditText inputDate;
-    private DatePicker datePicker;
     private ImageButton ib;
     private Calendar cal;
     private int day;
     private int month;
     private int year;
-    private int datePickerListener;
     private RadioGroup radioGroup;
-    private char gender;
+    public String gender = "x";
 
     static final int DATE_ID = 999;
 
@@ -79,8 +74,8 @@ public class RegisterActivity extends Activity {
         inputEmail = (EditText) findViewById(R.id.email);
         inputPassword = (EditText) findViewById(R.id.password);
         inputJob = (EditText) findViewById(R.id.job);
-        inputCity = (EditText) findViewById(R.id.text);
-        inputProvince = (EditText) findViewById(R.id.text);
+        inputCity = (EditText) findViewById(R.id.city);
+        inputProvince = (EditText) findViewById(R.id.province);
         btnRegister = (Button) findViewById(R.id.btnRegister);
         btnLinkToLogin = (Button) findViewById(R.id.btnLinkToLoginScreen);
 
@@ -114,9 +109,9 @@ public class RegisterActivity extends Activity {
                 if(null!=rb && checkedId > -1){
                     Toast.makeText(RegisterActivity.this, rb.getText(), Toast.LENGTH_SHORT).show();
                     if(rb.getText().equals("Male")){
-                        gender = 'm';
+                        gender = "m";
                     }else{
-                        gender = 'f';
+                        gender = "f";
                     }
 
                 }
@@ -149,13 +144,18 @@ public class RegisterActivity extends Activity {
                 String email = inputEmail.getText().toString().trim();
                 String password = inputPassword.getText().toString().trim();
                 String city = inputCity.getText().toString().trim();
+                String province = inputProvince.getText().toString().trim();
                 String job = inputJob.getText().toString().trim();
+                String birth= inputDate.getText().toString().trim();
 
-                if (!name.isEmpty() && !email.isEmpty() && !password.isEmpty()) {
-                    registerUser(name, email, password);
+
+                if (!name.isEmpty() && !email.isEmpty() && !password.isEmpty()
+                        && !city.isEmpty() && !province.isEmpty()
+                        && !job.isEmpty() && !birth.equals("Birthday") && !gender.equals("x")) {
+                    registerUser(name, email, password,gender,birth,job,city,province);
                 } else {
                     Toast.makeText(getApplicationContext(),
-                            "Please enter your details!", Toast.LENGTH_LONG)
+                            "There is empty!", Toast.LENGTH_LONG)
                             .show();
                 }
             }
@@ -179,7 +179,9 @@ public class RegisterActivity extends Activity {
      * email, password) to register url
      */
     private void registerUser(final String name, final String email,
-                              final String password) {
+                              final String password, final String gender,
+                              final String birthdate, final String job,
+                              final String city, final String province) {
         // Tag used to cancel the request
         String tag_string_req = "req_register";
 
@@ -200,16 +202,20 @@ public class RegisterActivity extends Activity {
                     if (!error) {
                         // User successfully stored in MySQL
                         // Now store the user in sqlite
-                        String uid = jObj.getString("uid");
+                        String uid = jObj.getString("id");
 
                         JSONObject user = jObj.getJSONObject("user");
                         String name = user.getString("name");
                         String email = user.getString("email");
-                        String created_at = user
-                                .getString("created_at");
+                        String gender = user.getString("gender");
+                        String birth_date = user.getString("birth_date");
+                        String profession = user.getString("profession");
+                        String city = user.getString("city");
+                        String province = user.getString("province");
+                        String created_at = user.getString("created_at");
 
                         // Inserting row in users table
-                        db.addUser(name, email, uid, created_at);
+                        db.addUser(name, email, uid, gender,birth_date,profession,city,province, created_at);
 
                         Toast.makeText(getApplicationContext(), "User successfully registered. Try login now!", Toast.LENGTH_LONG).show();
 
@@ -250,6 +256,11 @@ public class RegisterActivity extends Activity {
                 params.put("name", name);
                 params.put("email", email);
                 params.put("password", password);
+                params.put("gender",gender);
+                params.put("birth_date",birthdate);
+                params.put("profession",job);
+                params.put("city",city);
+                params.put("province",province);
 
                 return params;
             }
@@ -295,9 +306,8 @@ public class RegisterActivity extends Activity {
             day = selectedDay;
 
             // Show selected date
-            inputDate.setText(new StringBuilder().append(month + 1)
-                    .append("-").append(day).append("-").append(year)
-                    .append(" "));
+            inputDate.setText(new StringBuilder().append(year).append("-").append(month + 1)
+                    .append("-").append(day));
 
         }
     };
