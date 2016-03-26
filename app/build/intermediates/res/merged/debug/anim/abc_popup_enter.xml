@@ -18,4 +18,4 @@
     <alpha android:fromAlpha="0.0" android:toAlpha="1.0"
            android:interpolator="@android:anim/decelerate_interpolator"
            android:duration="@integer/abc_config_activityShortDur" />
-</set><!-- From: file:/usr/local/google/buildbot/src/googleplex-android/mnc-supportlib-release/frameworks/support/v7/appcompat/res/anim/abc_popup_enter.xml --><!-- From: file:/C:/Users/Azhar%20Fauzan%20Dz/Google%20Drive/Surverior/AndroidLoginAndRegistration%20v2/AndroidLoginAndRegistration/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/anim/abc_popup_enter.xml -->
+</set><!-- From: file:/usr/local/google/buildbot/src/googleplex-android/mnc-supportlib-release/frameworks/support/v7/appcompat/res/anim/abc_popup_enter.xml --><!-- From: file:/C:/Users/Teddy%20Pranatyo/Documents/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/anim/abc_popup_enter.xml -->
