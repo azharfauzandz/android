@@ -120,7 +120,7 @@
                     android:layout_gravity="right"
                     android:contentDescription="@string/selectdate"
                     android:cropToPadding="true"
-                    android:src="@drawable/calendar_icon3"/>
+                    android:src="@drawable/calendar_icon3" />
 
             </LinearLayout>
 
@@ -150,20 +150,18 @@
                 android:textColor="@color/input_register"
                 android:textColorHint="@color/input_register_hint" />
 
-            <EditText
+            <Spinner
                 android:id="@+id/province"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
                 android:background="@color/input_register_bg"
                 android:hint="@string/hint_province"
-                android:inputType="textCapWords"
                 android:padding="10dp"
                 android:singleLine="true"
-                android:textColor="@color/input_register"
-                android:textColorHint="@color/input_register_hint" />
-
-
+                android:spinnerMode="dialog"
+                android:prompt="@string/hint_province"
+                android:text="@string/hint_province"
+                />
 
             <!-- Login Button -->
 
@@ -171,7 +169,7 @@
                 android:id="@+id/btnRegister"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dip"
+                android:layout_marginTop="15dip"
                 android:background="#ea4c88"
                 android:text="@string/btn_register"
                 android:textColor="@color/white" />
@@ -182,7 +180,7 @@
                 android:id="@+id/btnLinkToLoginScreen"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="40dip"
+                android:layout_marginTop="10dip"
                 android:background="@null"
                 android:text="@string/btn_link_to_login"
                 android:textAllCaps="false"

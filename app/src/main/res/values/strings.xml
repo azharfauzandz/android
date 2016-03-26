@@ -20,4 +20,37 @@
     <string name="hint_birthdate">Birthdate</string>
     <string name="selectdate">Select Date</string>
 
+    <string name="province1">Aceh</string>
+    <string name="province2">Bali</string>
+    <string name="province3">Banten</string>
+    <string name="province4">Bengkulu</string>
+    <string name="province5">D.I.Yogyakarta</string>
+    <string name="province6">Gorontalo</string>
+    <string name="province7">Jakarta</string>
+    <string name="province8">Jambi</string>
+    <string name="province9">Jawa Barat</string>
+    <string name="province10">Jawa Tengah</string>
+    <string name="province11">Jawa Timur</string>
+    <string name="province12">Kalimantan Barat</string>
+    <string name="province13">Kalimantan Selatan</string>
+    <string name="province14">Kalimantan Tengah</string>
+    <string name="province15">Kalimantan Timur</string>
+    <string name="province16">Kalimantan Utara</string>
+    <string name="province17">Kepulauan Bangka Belitung</string>
+    <string name="province18">Kepulauan Riau</string>
+    <string name="province19">Lampung</string>
+    <string name="province20">Maluku</string>
+    <string name="province21">Maluku Utara</string>
+    <string name="province22">Nusa Tenggara Barat</string>
+    <string name="province23">Nusa Tenggara Timur</string>
+    <string name="province24">Papua</string>
+    <string name="province25">Papua Barat</string>
+    <string name="province26">Riau</string>
+    <string name="province27">Sulawesi Barat</string>
+    <string name="province28">Sulawesi Selatan</string>
+    <string name="province29">Sulawesi Tenggara</string>
+    <string name="province30">Sulawesi Utara</string>
+    <string name="province31">Sumatera Barat</string>
+    <string name="province32">Sumatera Selatan</string>
+    <string name="province33">Sumatera Utara</string>
 </resources>

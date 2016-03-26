@@ -2,18 +2,67 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\Azhar Fauzan Dz\Google Drive\Surverior\AndroidLoginAndRegistration v2\AndroidLoginAndRegistration\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.1.0\jars\classes.jar"
+        jar="C:\Users\Teddy Pranatyo\Documents\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.1.0\jars\classes.jar"
         jumboMode="false"
         revision="23.0.2"
         sha1="4477ea44f5ec5ad064022a22691732d7638ff197">
-        <dex dex="C:\Users\Azhar Fauzan Dz\Google Drive\Surverior\AndroidLoginAndRegistration v2\AndroidLoginAndRegistration\app\build\intermediates\pre-dexed\debug\classes-dec841dd1b1a5addc8430019858696b0e03e0ef3.jar" />
+        <dex dex="C:\Users\Teddy Pranatyo\Documents\android\app\build\intermediates\pre-dexed\debug\classes-21d9480e967d108ba7a64e39b856861b1a7c1b08.jar" />
     </item>
     <item
-        jar="C:\Users\Azhar Fauzan Dz\Google Drive\Surverior\AndroidLoginAndRegistration v2\AndroidLoginAndRegistration\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\jars\classes.jar"
+        jar="C:\Users\Teddy Pranatyo\Documents\android\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="09c5e804bc67fc0580360043dff067df574a60d4">
+        <dex dex="C:\Users\Teddy Pranatyo\Documents\android\app\build\intermediates\pre-dexed\debug\classes-ce5ef97622d65c9bea52723b9a8aef45ef0e1950.jar" />
+    </item>
+    <item
+        jar="C:\Users\Teddy Pranatyo\Documents\android\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="C:\Users\Teddy Pranatyo\Documents\android\app\build\intermediates\pre-dexed\debug\classes-686a9c469a11ef8210ec4bfbe96b23c8a9fd083f.jar" />
+    </item>
+    <item
+        jar="C:\Users\Teddy Pranatyo\Documents\android\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
+        <dex dex="C:\Users\Teddy Pranatyo\Documents\android\app\build\intermediates\pre-dexed\debug\classes-ef8b32ee240a2a283f3c931e15864abb92f3dbb3.jar" />
+    </item>
+    <item
+        jar="C:\Program Files (x86)\Android\android-sdk\extras\android\m2repository\com\android\support\support-annotations\23.1.1\support-annotations-23.1.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="C:\Users\Teddy Pranatyo\Documents\android\app\build\intermediates\pre-dexed\debug\support-annotations-23.1.1-6fd699aeef8bbc23a3ee27b7d45abde9e3ed1a1a.jar" />
+    </item>
+    <item
+        jar="C:\Users\Teddy Pranatyo\Documents\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\jars\classes.jar"
         jumboMode="false"
         revision="23.0.2"
         sha1="d0dda274b703dd9c5bb056867649d22b4171ae7d">
-        <dex dex="C:\Users\Azhar Fauzan Dz\Google Drive\Surverior\AndroidLoginAndRegistration v2\AndroidLoginAndRegistration\app\build\intermediates\pre-dexed\debug\classes-476824ced4042b2b5a7ff1eff58d3c4618b36c75.jar" />
+        <dex dex="C:\Users\Teddy Pranatyo\Documents\android\app\build\intermediates\pre-dexed\debug\classes-c7f0027ac24480b5506ca9411b7d1fa9340c856d.jar" />
+    </item>
+    <item
+        jar="C:\Users\Teddy Pranatyo\Documents\android\app\build\intermediates\exploded-aar\com.mcxiaoke.volley\library-aar\1.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="e40b9a81989bd4a846018551c280f8c4d837bf2e">
+        <dex dex="C:\Users\Teddy Pranatyo\Documents\android\app\build\intermediates\pre-dexed\debug\classes-a96d6310897b4604461ef51669f38b9136510568.jar" />
+    </item>
+    <item
+        jar="C:\Users\Teddy Pranatyo\Documents\android\app\build\intermediates\exploded-aar\com.android.support\design\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="379471b2bd17d9737c050345c08e8c7d16589784">
+        <dex dex="C:\Users\Teddy Pranatyo\Documents\android\app\build\intermediates\pre-dexed\debug\classes-79853c5872353d3d429cbc5a9477e5ffd54c8fc8.jar" />
+    </item>
+    <item
+        jar="C:\Users\Teddy Pranatyo\Documents\android\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\libs\internal_impl-23.1.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="C:\Users\Teddy Pranatyo\Documents\android\app\build\intermediates\pre-dexed\debug\internal_impl-23.1.1-dafe9ca0f0b0bef986d3666f4164c8e59364b90c.jar" />
     </item>
 
 </items>

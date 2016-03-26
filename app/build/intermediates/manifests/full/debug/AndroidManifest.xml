@@ -11,7 +11,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:name="info.androidhive.loginandregistration.app.AppController"
+        android:name="com.surverior.loginandregistration.app.AppController"
         android:allowBackup="true"
         android:debuggable="true"
         android:icon="@drawable/ic_launcher"

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<string-array name="province_array">
+        <item>@string/province1</item>
+        <item>@string/province2</item>
+        <item>@string/province3</item>
+        <item>@string/province4</item>
+        <item>@string/province5</item>
+        <item>@string/province6</item>
+        <item>@string/province7</item>
+        <item>@string/province8</item>
+        <item>@string/province9</item>
+        <item>@string/province10</item>
+        <item>@string/province11</item>
+        <item>@string/province12</item>
+        <item>@string/province13</item>
+        <item>@string/province14</item>
+        <item>@string/province15</item>
+        <item>@string/province16</item>
+        <item>@string/province17</item>
+        <item>@string/province18</item>
+        <item>@string/province19</item>
+        <item>@string/province20</item>
+        <item>@string/province21</item>
+        <item>@string/province22</item>
+        <item>@string/province23</item>
+        <item>@string/province24</item>
+        <item>@string/province25</item>
+        <item>@string/province26</item>
+        <item>@string/province27</item>
+        <item>@string/province28</item>
+        <item>@string/province29</item>
+        <item>@string/province30</item>
+        <item>@string/province31</item>
+        <item>@string/province32</item>
+        <item>@string/province33</item>
+    </string-array>-->
+    <string-array name="province_array2">
+        <item>-- Select Province --</item>
+        <item>Aceh</item>
+        <item>Bali</item>
+        <item>Banten</item>
+        <item>Bengkulu</item>
+        <item>D.I.Yogyakarta</item>
+        <item>Gorontalo</item>
+        <item>Jakarta</item>
+        <item>Jambi</item>
+        <item>Jawa Barat</item>
+        <item>Jawa Tengah</item>
+        <item>Jawa Timur</item>
+        <item>Kalimantan Barat</item>
+        <item>Kalimantan Selatan</item>
+        <item>Kalimantan Tengah</item>
+        <item>Kalimantan Timur</item>
+        <item>Kalimantan Utara</item>
+        <item>Kepulauan Bangka Belitung</item>
+        <item>Kepulauan Riau</item>
+        <item>Lampung</item>
+        <item>Maluku</item>
+        <item>Maluku Utara</item>
+        <item>Nusa Tenggara Barat</item>
+        <item>Nusa Tenggara Timur</item>
+        <item>Papua</item>
+        <item>Papua Barat</item>
+        <item>Riau</item>
+        <item>Sulawesi Barat</item>
+        <item>Sulawesi Selatan</item>
+        <item>Sulawesi Tenggara</item>
+        <item>Sulawesi Utara</item>
+        <item>Sumatera Barat</item>
+        <item>Sumatera Selatan</item>
+        <item>Sumatera Utara</item>
+    </string-array>
+</resources>
