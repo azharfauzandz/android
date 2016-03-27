@@ -124,7 +124,7 @@
 
             </LinearLayout>
 
-            <EditText
+            <!--<EditText
                 android:id="@+id/job"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -135,7 +135,21 @@
                 android:padding="10dp"
                 android:singleLine="true"
                 android:textColor="@color/input_register"
-                android:textColorHint="@color/input_register_hint" />
+                android:textColorHint="@color/input_register_hint" />-->
+
+            <Spinner
+                android:id="@+id/job"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/input_register_bg"
+                android:hint="@string/hint_job"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:singleLine="true"
+                android:spinnerMode="dialog"
+                android:prompt="@string/hint_job"
+                android:text="@string/hint_job"
+                />
 
             <EditText
                 android:id="@+id/city"
